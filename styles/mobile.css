@@ -1,17 +1,13 @@
 /* Mobile specific overrides for Second Brain landing page */
 @media (max-width: 600px) {
-  html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
   /* Lighter grid lines */
   .hero::before {
     background-image: linear-gradient(
         to right,
-        rgba(36, 157, 243, 0.05) 1px,
+        rgba(36, 157, 243, 0.1) 1px,
         transparent 1px
       ),
-      linear-gradient(to bottom, rgba(36, 157, 243, 0.05) 1px, transparent 1px);
+      linear-gradient(to bottom, rgba(36, 157, 243, 0.1) 1px, transparent 1px);
   }
 
   .container {
@@ -24,6 +20,7 @@
     align-items: flex-start;
     text-align: left;
     gap: 0.1rem;
+   
   }
 
   .hero-text .invite-text {
@@ -59,9 +56,9 @@
 
   .feature {
     flex: unset; /* remove desktop flex growth */
-    width: 100%;
+    width: 90%;
     padding: 1rem 1.2rem;
-    margin: 0;
+    margin: 0 auto;
     background-color: #111;
     border-radius: 12px;
   }
@@ -78,14 +75,14 @@
 
   .feature h3 {
     font-size: 20px;
-    text-align: left;
+    text-align: center;
     margin-bottom: 0.4rem;
   }
 
   .feature p {
     font-size: 1rem;
-    text-align: left;
-    margin-bottom: 0; /* remove unnecessary space */
+    text-align: center;
+    margin-bottom: 0;
   }
 
   /* CTA section */
@@ -141,12 +138,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* border: 1px solid red; */
     gap: 0.4rem;
   }
 
   footer .powered img {
     width: 40px;
     height: auto;
+    /* border: 1px solid rgb(22, 164, 34); */
+  }
+ .gemini{
+padding-bottom: 5px;
+/* border: 1px solid green; */
   }
 
   footer .note {

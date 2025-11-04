@@ -37,10 +37,10 @@ body {
   z-index: 0;
   background-image: linear-gradient(
       to right,
-      rgba(36, 157, 243, 0.15) 1px,
+      rgba(36, 157, 243, 0.1) 1px,
       transparent 1px
     ),
-    linear-gradient(to bottom, rgba(36, 157, 243, 0.15) 1px, transparent 1px);
+    linear-gradient(to bottom, rgba(36, 157, 243, 0.1) 1px, transparent 1px);
   background-size: 20px 20px;
   border-top-left-radius: 111px;
   border-top-right-radius: 111px;
@@ -54,6 +54,7 @@ body {
 .hero-text {
   flex: 1 1 300px;
   /* border: 1px solid red; */
+  padding-left: 4rem;
 }
 
 .hero-text .invite-text {
@@ -67,6 +68,7 @@ body {
   font-weight: 700;
   margin: 0.5rem 0;
 }
+
 
 .yellow {
   background-color: #e9e365;
@@ -134,8 +136,9 @@ body {
   box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
 }
 
+
 .feature img {
-  width: 100px;
+  width: 120px;
   display: block;
   margin: 0 auto 1rem;
   filter: brightness(1.2);
@@ -144,11 +147,16 @@ body {
 /* Smaller width for first and third icons (Search and Share) */
 .features .feature:nth-child(1) img,
 .features .feature:nth-child(3) img {
-  width: 80px;
+  width: 100px;
+}
+/* Larger width for middle icon */
+.features .feature:nth-child(2) img {
+  width: 150px;
 }
 
 .feature h3 {
   color: #fff;
+  text-align: center;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.2;
