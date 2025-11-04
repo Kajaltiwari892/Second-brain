@@ -1,0 +1,91 @@
+/* Mobile specific overrides for Second Brain landing page */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text .invite-text {
+    font-size: 10px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .yellow {
+    font-size: 36px;
+  }
+  .hero-img {
+    width: 200px;
+    margin-top: 1rem;
+  }
+
+  /* Intro text */
+  .intro p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* Features section */
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature {
+    padding: 1rem;
+  }
+  .feature img {
+    width: 64px;
+  }
+  /* First and third icons need same smaller width */
+  .features .feature:nth-child(1) img,
+  .features .feature:nth-child(3) img {
+    width: 64px;
+  }
+  .feature h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .feature p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  /* CTA section */
+  .cta {
+    padding: 1.5rem;
+  }
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-content p {
+    font-size: 18px;
+  }
+  .cta-img {
+    position: static;
+    margin: 1rem auto 0;
+    width: 120px;
+  }
+
+  /* Footer */
+  footer .logo {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .logo img {
+    width: 100px;
+  }
+  footer .logo h2 {
+    font-size: 64px;
+  }
+  footer .powered {
+    font-size: 1rem;
+  }
+  footer .note {
+    font-size: 0.8rem;
+  }
+}
