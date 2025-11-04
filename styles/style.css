@@ -35,8 +35,12 @@ body {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: linear-gradient(to right, #262626 1px, transparent 1px),
-    linear-gradient(to bottom, #262626 1px, transparent 1px);
+  background-image: linear-gradient(
+      to right,
+      rgba(36, 157, 243, 0.15) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(36, 157, 243, 0.15) 1px, transparent 1px);
   background-size: 20px 20px;
   border-top-left-radius: 111px;
   border-top-right-radius: 111px;
@@ -98,6 +102,10 @@ body {
 
 .highlight {
   color: #e9e365;
+}
+
+.blue-text {
+  color: #31a9ff;
 }
 
 /* Features */
@@ -271,5 +279,78 @@ footer .note {
   }
   .hero-img {
     width: 230px;
+  }
+}
+
+/* Tablet (max-width: 900px) adjustments */
+@media (max-width: 900px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  /* Hero */
+  .hero {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .hero-text {
+    flex: 1 1 260px;
+  }
+  .hero-text .invite-text {
+    font-size: 16px;
+  }
+  .hero h1 {
+    font-size: 55px;
+  }
+  .yellow {
+    font-size: 60px;
+  }
+  .hero-img {
+    width: 280px;
+  }
+
+  /* Intro */
+  .intro p {
+    font-size: 20px;
+  }
+
+  /* Features */
+  .features {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .feature {
+    flex: 1 1 300px;
+    padding: 1.25rem;
+  }
+  .feature h3 {
+    font-size: 22px;
+  }
+  .feature p {
+    font-size: 0.85rem;
+  }
+
+  /* CTA */
+  .cta-content p {
+    font-size: 22px;
+  }
+  .cta-img {
+    width: 160px;
+    position: static;
+    margin-top: 1rem;
+  }
+
+  /* Footer */
+  footer .logo img {
+    width: 120px;
+  }
+  footer .logo h2 {
+    font-size: 100px;
+  }
+  footer .powered {
+    font-size: 1rem;
+  }
+  footer .note {
+    font-size: 0.9rem;
   }
 }

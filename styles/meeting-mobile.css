@@ -1,0 +1,88 @@
+/* Mobile overrides for meeting page */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  /* Header */
+  .logo-icon {
+    width: 40px;
+  }
+  .header h1 {
+    font-size: 1.6rem;
+  }
+  /* Intro */
+  .intro h2 {
+    font-size: 1.3rem;
+  }
+  /* Meeting card */
+  .meeting-card {
+    gap: 0.75rem;
+    padding: 0.8rem 1rem;
+  }
+  .meeting-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .meeting-icon img {
+    width: 24px;
+  }
+  .meeting-details h3 {
+    font-size: 1rem;
+  }
+  .meeting-details p {
+    font-size: 0.8rem;
+  }
+  /* Participants */
+  .participants h4 {
+    font-size: 0.8rem;
+  }
+  .participants p {
+    font-size: 0.85rem;
+  }
+  /* Notes & Actions */
+  .notes h3,
+  .actions h3 {
+    font-size: 1rem;
+  }
+  .notes p,
+  .notes li,
+  .actions li {
+    font-size: 0.95rem;
+  }
+  /* CTA */
+  .cta {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+  }
+  .cta-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+  .cta-text p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  .cta button {
+    margin-top: 0.75rem;
+    padding: 0.6rem 1.1rem;
+  }
+  .cta-icon {
+    width: 90px;
+    position: static;
+    margin-left: 1rem;
+    align-self: flex-end;
+  }
+  /* Footer */
+  .footer {
+    font-size: 0.75rem;
+    margin-top: 2rem;
+  }
+  .powered img {
+    width: 40px;
+    margin: 0 0.5rem;
+  }
+}
