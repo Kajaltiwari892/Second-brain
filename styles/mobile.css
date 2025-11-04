@@ -1,5 +1,9 @@
 /* Mobile specific overrides for Second Brain landing page */
 @media (max-width: 600px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   /* Lighter grid lines */
   .hero::before {
     background-image: linear-gradient(
